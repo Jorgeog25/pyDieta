@@ -1,6 +1,5 @@
 package utils;
 
-
 public class Node <T>{
 
     T key;

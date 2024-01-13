@@ -1,0 +1,2 @@
+# ÁRBOL
+Como no era capaz de crear un árbol a la vez de crear el proyecto, he decidido crear un proyecto a parte. El unico objetivo es crear un árbol igual que el que utilizare en el proyecto pero más sencillo y asi poder comprobar si funciona correctamente.

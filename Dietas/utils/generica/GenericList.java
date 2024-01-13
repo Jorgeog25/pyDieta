@@ -1,7 +1,5 @@
 package utils.generica;
 
-import generica.GenericNode;
-
 public class GenericList<T> {
 
     private GenericNode<T> first = null;
