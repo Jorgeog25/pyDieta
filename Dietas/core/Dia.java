@@ -7,7 +7,4 @@ public class Dia implements IData {
     public Dia(int dia) {
         this.dia = "Dia " + dia;
     }
-
-    
-    
 }
