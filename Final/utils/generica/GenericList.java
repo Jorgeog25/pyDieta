@@ -62,19 +62,12 @@ public class GenericList<T> {
         return iterator;
     }
 
-    public T[] listAll() {
-        T[] list = (T[]) new Object[this.size()];
+    public void printAll() {
         GenericNode<T> iterator = this.first;
 
-        if (iterator == null)
-            return list;
-
-        int count = 0;
         while (iterator != null) {
-            list[count] = iterator.getValue();
-            count++;
+            System.out.println(iterator.getValue());
             iterator = iterator.getNext();
         }
-        return list;
     }
 }

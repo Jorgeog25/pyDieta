@@ -2,6 +2,7 @@ package core;
 
 
 import utils.generica.GenericList;
+import utils.generica.GenericNode;
 
 public class Ingesta {
 
@@ -18,13 +19,14 @@ public class Ingesta {
     }
 
     public void getAlimentos() {
-        GenericList<Alimento> iterator = new GenericList<>();
-        iterator = this.alimentos;
-        while (iterator.getFirst() != null) {
-            System.out.println("      " + iterator.getFirst().getValue().getNombre());
-            iterator.deleteFront();
+        GenericNode<Alimento> iterator = this.alimentos.getFirst();
+    
+        while (iterator != null) {
+            System.out.println("      " + iterator.getValue().getNombre());
+            iterator = iterator.getNext();
         }
     }
+    
 
     public void addAlimento(Alimento alimento) {
         this.alimentos.insertEnd(alimento);
