@@ -1,9 +1,11 @@
 package utils;
 
+import core.IData;
+
 public class Node <T>{
 
-    T key;
-    Node<T> first, second, third, fourth, fifth;
+    public T key;
+    public Node<T> first, second, third, fourth, fifth;
 
     public Node(T key) {
         this.key = key;
@@ -12,5 +14,9 @@ public class Node <T>{
         third = null;
         fourth = null;
         fifth = null;
+    }
+
+    public IData getValue() {
+        return (IData) key;
     }
 }

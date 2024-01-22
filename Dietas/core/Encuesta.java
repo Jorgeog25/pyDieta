@@ -59,6 +59,119 @@ public class Encuesta {
         this.tree.insertNode(tree.getRoot(), cena, 4, 5);
     }
 
+    public void mostrarArbol(){
+        System.out.println();
+        System.out.println("Paciente: " + this.tree.getRoot().getValue().getNombre());
 
-    
+        System.out.println(" " + this.tree.getRoot().first.getValue().getNombre());
+        System.out.println("  " + this.tree.getRoot().first.first.getValue().getNombre());
+        if(!this.tree.getRoot().first.first.getValue().ingestaVacia()){
+            this.tree.getRoot().first.first.getValue().getAlimentos();
+        }
+        System.out.println("  " + this.tree.getRoot().first.second.getValue().getNombre());
+        if(!this.tree.getRoot().first.second.getValue().ingestaVacia()){
+            this.tree.getRoot().first.second.getValue().getAlimentos();
+        }
+        System.out.println("  " + this.tree.getRoot().first.third.getValue().getNombre());
+        if(!this.tree.getRoot().first.third.getValue().ingestaVacia()){
+            this.tree.getRoot().first.third.getValue().getAlimentos();
+        }
+        System.out.println("  " + this.tree.getRoot().first.fourth.getValue().getNombre());
+        if(!this.tree.getRoot().first.fourth.getValue().ingestaVacia()){
+            this.tree.getRoot().first.fourth.getValue().getAlimentos();
+        }
+        System.out.println("  " + this.tree.getRoot().first.fifth.getValue().getNombre());
+        if(!this.tree.getRoot().first.fifth.getValue().ingestaVacia()){
+            this.tree.getRoot().first.fifth.getValue().getAlimentos();
+        }
+
+        System.out.println(" " + this.tree.getRoot().second.getValue().getNombre());
+        System.out.println("  " + this.tree.getRoot().second.first.getValue().getNombre());
+        if(!this.tree.getRoot().second.first.getValue().ingestaVacia()){
+            this.tree.getRoot().second.first.getValue().getAlimentos();
+        }
+        System.out.println("  " + this.tree.getRoot().second.second.getValue().getNombre());
+        if(!this.tree.getRoot().second.second.getValue().ingestaVacia()){
+            this.tree.getRoot().second.second.getValue().getAlimentos();
+        }
+        System.out.println("  " + this.tree.getRoot().second.third.getValue().getNombre());
+        if(!this.tree.getRoot().second.third.getValue().ingestaVacia()){
+            this.tree.getRoot().second.third.getValue().getAlimentos();
+        }
+        System.out.println("  " + this.tree.getRoot().second.fourth.getValue().getNombre());
+        if(!this.tree.getRoot().second.fourth.getValue().ingestaVacia()){
+            this.tree.getRoot().second.fourth.getValue().getAlimentos();
+        }
+        System.out.println("  " + this.tree.getRoot().second.fifth.getValue().getNombre());
+        if(!this.tree.getRoot().second.fifth.getValue().ingestaVacia()){
+            this.tree.getRoot().second.fifth.getValue().getAlimentos();
+        }
+
+        System.out.println(" " + this.tree.getRoot().third.getValue().getNombre());
+        System.out.println("  " + this.tree.getRoot().third.first.getValue().getNombre());
+        if(!this.tree.getRoot().third.first.getValue().ingestaVacia()){
+            this.tree.getRoot().third.first.getValue().getAlimentos();
+        }
+        System.out.println("  " + this.tree.getRoot().third.second.getValue().getNombre());
+        if(!this.tree.getRoot().third.second.getValue().ingestaVacia()){
+            this.tree.getRoot().third.second.getValue().getAlimentos();
+        }
+        System.out.println("  " + this.tree.getRoot().third.third.getValue().getNombre());
+        if(!this.tree.getRoot().third.third.getValue().ingestaVacia()){
+            this.tree.getRoot().third.third.getValue().getAlimentos();
+        }
+        System.out.println("  " + this.tree.getRoot().third.fourth.getValue().getNombre());
+        if(!this.tree.getRoot().third.fourth.getValue().ingestaVacia()){
+            this.tree.getRoot().third.fourth.getValue().getAlimentos();
+        }
+        System.out.println("  " + this.tree.getRoot().third.fifth.getValue().getNombre());
+        if(!this.tree.getRoot().third.fifth.getValue().ingestaVacia()){
+            this.tree.getRoot().third.fifth.getValue().getAlimentos();
+        }
+
+        System.out.println(" " + this.tree.getRoot().fourth.getValue().getNombre());
+        System.out.println("  " + this.tree.getRoot().fourth.first.getValue().getNombre());
+        if(!this.tree.getRoot().fourth.first.getValue().ingestaVacia()){
+            this.tree.getRoot().fourth.first.getValue().getAlimentos();
+        }
+        System.out.println("  " + this.tree.getRoot().fourth.second.getValue().getNombre());
+        if(!this.tree.getRoot().fourth.second.getValue().ingestaVacia()){
+            this.tree.getRoot().fourth.second.getValue().getAlimentos();
+        }
+        System.out.println("  " + this.tree.getRoot().fourth.third.getValue().getNombre());
+        if(!this.tree.getRoot().fourth.third.getValue().ingestaVacia()){
+            this.tree.getRoot().fourth.third.getValue().getAlimentos();
+        }
+        System.out.println("  " + this.tree.getRoot().fourth.fourth.getValue().getNombre());
+        if(!this.tree.getRoot().fourth.fourth.getValue().ingestaVacia()){
+            this.tree.getRoot().fourth.fourth.getValue().getAlimentos();
+        }
+        System.out.println("  " + this.tree.getRoot().fourth.fifth.getValue().getNombre());
+        if(!this.tree.getRoot().fourth.fifth.getValue().ingestaVacia()){
+            this.tree.getRoot().fourth.fifth.getValue().getAlimentos();
+        }
+
+        System.out.println(" " + this.tree.getRoot().fifth.getValue().getNombre());
+        System.out.println("  " + this.tree.getRoot().fifth.first.getValue().getNombre());
+        if(!this.tree.getRoot().fifth.first.getValue().ingestaVacia()){
+            this.tree.getRoot().fifth.first.getValue().getAlimentos();
+        }
+        System.out.println("  " + this.tree.getRoot().fifth.second.getValue().getNombre());
+        if(!this.tree.getRoot().fifth.second.getValue().ingestaVacia()){
+            this.tree.getRoot().fifth.second.getValue().getAlimentos();
+        }
+        System.out.println("  " + this.tree.getRoot().fifth.third.getValue().getNombre());
+        if(!this.tree.getRoot().fifth.third.getValue().ingestaVacia()){
+            this.tree.getRoot().fifth.third.getValue().getAlimentos();
+        }
+        System.out.println("  " + this.tree.getRoot().fifth.fourth.getValue().getNombre());
+        if(!this.tree.getRoot().fifth.fourth.getValue().ingestaVacia()){
+            this.tree.getRoot().fifth.fourth.getValue().getAlimentos();
+        }
+        System.out.println("  " + this.tree.getRoot().fifth.fifth.getValue().getNombre());
+        if(!this.tree.getRoot().fifth.fifth.getValue().ingestaVacia()){
+            this.tree.getRoot().fifth.fifth.getValue().getAlimentos();
+        }
+    }
+ 
 }

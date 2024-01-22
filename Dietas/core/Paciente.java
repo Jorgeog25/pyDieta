@@ -53,4 +53,16 @@ public class Paciente  implements IData{
         System.out.println("Altura: " + altura);
     }
 
+    @Override
+    public boolean ingestaVacia() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'ingestaVacia'");
+    }
+
+    @Override
+    public void getAlimentos() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getAlimentos'");
+    }
+
 }

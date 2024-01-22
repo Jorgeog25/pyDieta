@@ -1,9 +1,11 @@
 package core;
+
+
 import utils.generica.GenericList;
 
-public class Ingesta implements IData {
+public class Ingesta {
 
-    String nombre;
+    String nombre; 
     GenericList<Alimento> alimentos;
 
     public Ingesta(String nombre) {
@@ -16,18 +18,19 @@ public class Ingesta implements IData {
     }
 
     public void getAlimentos() {
-        GenericList<Alimento> iterator = this.alimentos;
+        GenericList<Alimento> iterator = new GenericList<>();
+        iterator = this.alimentos;
         while (iterator.getFirst() != null) {
-            System.out.println(iterator.getFirst().getValue().getNombre());
+            System.out.println("      " + iterator.getFirst().getValue().getNombre());
             iterator.deleteFront();
         }
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void addAlimento(Alimento alimento) {
+        this.alimentos.insertEnd(alimento);
     }
 
-    public boolean ingestaVacia() {
-        return this.alimentos.isEmpty();
-    }
+
+
+    
 }

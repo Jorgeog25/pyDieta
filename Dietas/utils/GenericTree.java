@@ -2,7 +2,7 @@ package utils;
 
 public class GenericTree<T> {
 
-    Node<T> root;
+    public Node<T> root;
 
     public GenericTree() {
         root = null;
@@ -129,17 +129,5 @@ public class GenericTree<T> {
                 break;
         }
 
-    }
-    
-    public void printTree(Node<T> node) {
-        if (node != null) {
-            System.out.println(node.key);
-            printTree(node.first);
-            printTree(node.second);
-            printTree(node.third);
-            printTree(node.fourth);
-            printTree(node.fifth);
-
-        }
     }
 }
