@@ -1,5 +1,7 @@
 package core;
 
+
+
 public class Paciente {
 
     private String nombre;
@@ -73,4 +75,75 @@ public class Paciente {
         double mineralesTotal = this.dia1.getMinerales() + this.dia2.getMinerales() + this.dia3.getMinerales() + this.dia4.getMinerales() + this.dia5.getMinerales();
         return mineralesTotal;
     }
+
+    public void extraerTipos() {
+        String resultadoMayoritario = "";
+        int contadorFrutaVerdura = 0;
+        int contadorAltoEnAzucar = 0;
+        int contadorGrasasSaturadas = 0;
+        int contadorSano = 0;
+    
+        if (this.dia1.extraerTipos().equals("Fruta/Verdura")) {
+            contadorFrutaVerdura++;
+        } else if (this.dia1.extraerTipos().equals("Alto en azúcar")) {
+            contadorAltoEnAzucar++;
+        } else if (this.dia1.extraerTipos().equals("Grasas Saturadas")) {
+            contadorGrasasSaturadas++;
+        } else if (this.dia1.extraerTipos().equals("Sano")) {
+            contadorSano++;
+        }
+    
+        if (this.dia2.extraerTipos().equals("Fruta/Verdura")) {
+            contadorFrutaVerdura++;
+        } else if (this.dia2.extraerTipos().equals("Alto en azúcar")) {
+            contadorAltoEnAzucar++;
+        } else if (this.dia2.extraerTipos().equals("Grasas Saturadas")) {
+            contadorGrasasSaturadas++;
+        } else if (this.dia2.extraerTipos().equals("Sano")) {
+            contadorSano++;
+        }
+    
+        if (this.dia3.extraerTipos().equals("Fruta/Verdura")) {
+            contadorFrutaVerdura++;
+        } else if (this.dia3.extraerTipos().equals("Alto en azúcar")) {
+            contadorAltoEnAzucar++;
+        } else if (this.dia3.extraerTipos().equals("Grasas Saturadas")) {
+            contadorGrasasSaturadas++;
+        } else if (this.dia3.extraerTipos().equals("Sano")) {
+            contadorSano++;
+        }
+    
+        if (this.dia4.extraerTipos().equals("Fruta/Verdura")) {
+            contadorFrutaVerdura++;
+        } else if (this.dia4.extraerTipos().equals("Alto en azúcar")) {
+            contadorAltoEnAzucar++;
+        } else if (this.dia4.extraerTipos().equals("Grasas Saturadas")) {
+            contadorGrasasSaturadas++;
+        } else if (this.dia4.extraerTipos().equals("Sano")) {
+            contadorSano++;
+        }
+    
+        if (this.dia5.extraerTipos().equals("Fruta/Verdura")) {
+            contadorFrutaVerdura++;
+        } else if (this.dia5.extraerTipos().equals("Alto en azúcar")) {
+            contadorAltoEnAzucar++;
+        } else if (this.dia5.extraerTipos().equals("Grasas Saturadas")) {
+            contadorGrasasSaturadas++;
+        } else if (this.dia5.extraerTipos().equals("Sano")) {
+            contadorSano++;
+        }
+    
+        if (contadorFrutaVerdura > contadorAltoEnAzucar && contadorFrutaVerdura > contadorGrasasSaturadas && contadorFrutaVerdura > contadorSano) {
+            resultadoMayoritario = "Fruta/Verdura";
+        } else if (contadorAltoEnAzucar > contadorFrutaVerdura && contadorAltoEnAzucar > contadorGrasasSaturadas && contadorAltoEnAzucar > contadorSano) {
+            resultadoMayoritario = "Alto en azúcar";
+        } else if (contadorGrasasSaturadas > contadorFrutaVerdura && contadorGrasasSaturadas > contadorAltoEnAzucar && contadorGrasasSaturadas > contadorSano) {
+            resultadoMayoritario = "Grasas Saturadas";
+        } else if (contadorSano > contadorFrutaVerdura && contadorSano > contadorAltoEnAzucar && contadorSano > contadorGrasasSaturadas) {
+            resultadoMayoritario = "Sano";
+        }
+        System.out.println("El tipo de alimento más consumido es: " + resultadoMayoritario);
+    }
+    
+
 }

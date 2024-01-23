@@ -26,7 +26,7 @@ public class Ingesta {
             iterator = iterator.getNext();
         }
     }
-    
+
     public void addAlimento(Alimento alimento) {
         this.alimentos.insertEnd(alimento);
     }
@@ -99,6 +99,42 @@ public class Ingesta {
             iterator = iterator.getNext();
         }
         return minerales;
+    }
+
+    public String extraerTipos() {
+        GenericNode<Alimento> iterator = this.alimentos.getFirst();
+        String tipo = "";
+        String resultadoMayoritario = "";
+        int contadorFrutaVerdura = 0;
+        int contadorAltoEnAzucar = 0;
+        int contadorGrasasSaturadas = 0;
+        int contadorSano = 0;
+    
+        while (iterator != null) {
+            tipo = iterator.getValue().getTipo();
+            if (tipo.equals("Fruta/Verdura")) {
+                contadorFrutaVerdura++;
+            } else if (tipo.equals("Alto en azúcar")) {
+                contadorAltoEnAzucar++;
+            } else if (tipo.equals("Grasas Saturadas")) {
+                contadorGrasasSaturadas++;
+            } else if (tipo.equals("Sano")) {
+                contadorSano++;
+            }
+            iterator = iterator.getNext();
+        }
+    
+        if (contadorFrutaVerdura > contadorAltoEnAzucar && contadorFrutaVerdura > contadorGrasasSaturadas && contadorFrutaVerdura > contadorSano) {
+            resultadoMayoritario = "Fruta/Verdura";
+        } else if (contadorAltoEnAzucar > contadorFrutaVerdura && contadorAltoEnAzucar > contadorGrasasSaturadas && contadorAltoEnAzucar > contadorSano) {
+            resultadoMayoritario = "Alto en azúcar";
+        } else if (contadorGrasasSaturadas > contadorFrutaVerdura && contadorGrasasSaturadas > contadorAltoEnAzucar && contadorGrasasSaturadas > contadorSano) {
+            resultadoMayoritario = "Grasas Saturadas";
+        } else if (contadorSano > contadorFrutaVerdura && contadorSano > contadorAltoEnAzucar && contadorSano > contadorGrasasSaturadas) {
+            resultadoMayoritario = "Sano";
+        }
+    
+        return resultadoMayoritario;
     }
     
 }

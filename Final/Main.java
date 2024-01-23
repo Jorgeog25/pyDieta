@@ -44,11 +44,13 @@ public class Main {
         System.out.println("2. Mostrar arbol");
         System.out.println("3. Recibir resultados de la encuesta");
         System.out.println("4. Rellenar tabla con datos imaginarios");
-        System.out.println("5. Salir");
+        System.out.println("5. Tipo de alimento mas consumido");
+        System.out.println("6. Solo alimentos Altos en azúcar");
+        System.out.println("7. Salir");
     }
 
     static void printIngesta(){
-        System.out.println("Seleccione ingesta: 1 (Desayuno) / 2 (Media mañana) / 3 (Almuerzo) / 4 (Merienda) / 5 (Cena) / -1 (Menu)");
+        System.out.println("Seleccione ingesta: 1 (Desayuno) / 2 (Almuerzo) / 3 (Comida) / 4 (Merienda) / 5 (Cena) / -1 (Menu)");
     }
     static void ingreseAlimento(){
         System.out.println("Ingrese el alimento: ");
@@ -256,6 +258,16 @@ public class Main {
                     break;
 
                 case 5:
+                    encuesta.tipoAlimentoMasConsumido(paciente);
+                    System.out.println();
+                    break;
+
+                case 6:
+                    encuesta.soloAltoEnAzucar(paciente);
+                    System.out.println();
+                    break;
+
+                case 7:
                     exit = true;
                     break;
 

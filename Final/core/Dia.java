@@ -1,5 +1,6 @@
 package core;
 
+
 public class Dia {
 
     private String dia;
@@ -68,4 +69,74 @@ public class Dia {
         return mineralesTotal;
     }
 
+    public String extraerTipos() {
+        int contadorFrutaVerdura = 0;
+        int contadorAltoEnAzucar = 0;
+        int contadorGrasasSaturadas = 0;
+        int contadorSano = 0;
+        String resultadoMayoritario = "";
+    
+        if (this.getDesayuno().extraerTipos().equals("Fruta/Verdura")) {
+            contadorFrutaVerdura++;
+        } else if (this.getDesayuno().extraerTipos().equals("Alto en azúcar")) {
+            contadorAltoEnAzucar++;
+        } else if (this.getDesayuno().extraerTipos().equals("Grasas Saturadas")) {
+            contadorGrasasSaturadas++;
+        } else if (this.getDesayuno().extraerTipos().equals("Sano")) {
+            contadorSano++;
+        }
+    
+        if (this.getAlmuerzo().extraerTipos().equals("Fruta/Verdura")) {
+            contadorFrutaVerdura++;
+        } else if (this.getAlmuerzo().extraerTipos().equals("Alto en azúcar")) {
+            contadorAltoEnAzucar++;
+        } else if (this.getAlmuerzo().extraerTipos().equals("Grasas Saturadas")) {
+            contadorGrasasSaturadas++;
+        } else if (this.getAlmuerzo().extraerTipos().equals("Sano")) {
+            contadorSano++;
+        }
+    
+        if (this.getComida().extraerTipos().equals("Fruta/Verdura")) {
+            contadorFrutaVerdura++;
+        } else if (this.getComida().extraerTipos().equals("Alto en azúcar")) {
+            contadorAltoEnAzucar++;
+        } else if (this.getComida().extraerTipos().equals("Grasas Saturadas")) {
+            contadorGrasasSaturadas++;
+        } else if (this.getComida().extraerTipos().equals("Sano")) {
+            contadorSano++;
+        }
+    
+        if (this.getMerienda().extraerTipos().equals("Fruta/Verdura")) {
+            contadorFrutaVerdura++;
+        } else if (this.getMerienda().extraerTipos().equals("Alto en azúcar")) {
+            contadorAltoEnAzucar++;
+        } else if (this.getMerienda().extraerTipos().equals("Grasas Saturadas")) {
+            contadorGrasasSaturadas++;
+        } else if (this.getMerienda().extraerTipos().equals("Sano")) {
+            contadorSano++;
+        }
+    
+        if (this.getCena().extraerTipos().equals("Fruta/Verdura")) {
+            contadorFrutaVerdura++;
+        } else if (this.getCena().extraerTipos().equals("Alto en azúcar")) {
+            contadorAltoEnAzucar++;
+        } else if (this.getCena().extraerTipos().equals("Grasas Saturadas")) {
+            contadorGrasasSaturadas++;
+        } else if (this.getCena().extraerTipos().equals("Sano")) {
+            contadorSano++;
+        }
+    
+        if (contadorFrutaVerdura > contadorAltoEnAzucar && contadorFrutaVerdura > contadorGrasasSaturadas && contadorFrutaVerdura > contadorSano) {
+            resultadoMayoritario = "Fruta/Verdura";
+        } else if (contadorAltoEnAzucar > contadorFrutaVerdura && contadorAltoEnAzucar > contadorGrasasSaturadas && contadorAltoEnAzucar > contadorSano) {
+            resultadoMayoritario = "Alto en azúcar";
+        } else if (contadorGrasasSaturadas > contadorFrutaVerdura && contadorGrasasSaturadas > contadorAltoEnAzucar && contadorGrasasSaturadas > contadorSano) {
+            resultadoMayoritario = "Grasas Saturadas";
+        } else if (contadorSano > contadorFrutaVerdura && contadorSano > contadorAltoEnAzucar && contadorSano > contadorGrasasSaturadas) {
+            resultadoMayoritario = "Sano";
+        }
+    
+        return resultadoMayoritario;
+    }
+    
 }
