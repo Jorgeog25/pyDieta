@@ -42,7 +42,9 @@ public class Main {
         System.out.println("Seleccione una opcion: ");
         System.out.println("1. Ingresar alimento");
         System.out.println("2. Mostrar arbol");
-        System.out.println("3. Salir");
+        System.out.println("3. Recibir resultados de la encuesta");
+        System.out.println("4. Rellenar tabla con datos imaginarios");
+        System.out.println("5. Salir");
     }
 
     static void printIngesta(){
@@ -70,23 +72,23 @@ public class Main {
                                 switch (eleccion) {
                                     case 1:
                                         ingreseAlimento();
-                                        paciente.getDia1().getDesayuno().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia1().getDesayuno().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case 2:
                                         ingreseAlimento();
-                                        paciente.getDia1().getAlmuerzo().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia1().getAlmuerzo().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case 3:
                                         ingreseAlimento();
-                                        paciente.getDia1().getComida().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia1().getComida().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case 4:
                                         ingreseAlimento();
-                                        paciente.getDia1().getMerienda().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia1().getMerienda().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case 5:
                                         ingreseAlimento();
-                                        paciente.getDia1().getCena().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia1().getCena().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case -1:
                                         break;
@@ -104,23 +106,23 @@ public class Main {
                                 switch (eleccion) {
                                     case 1:
                                         ingreseAlimento();
-                                        paciente.getDia2().getDesayuno().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia2().getDesayuno().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case 2:
                                         ingreseAlimento();
-                                        paciente.getDia2().getAlmuerzo().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia2().getAlmuerzo().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case 3:
                                         ingreseAlimento();
-                                        paciente.getDia2().getComida().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia2().getComida().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case 4:
                                         ingreseAlimento();
-                                        paciente.getDia2().getMerienda().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia2().getMerienda().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case 5:
                                         ingreseAlimento();
-                                        paciente.getDia2().getCena().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia2().getCena().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case -1:
                                         break;
@@ -138,23 +140,23 @@ public class Main {
                                 switch (eleccion) {
                                     case 1:
                                         ingreseAlimento();
-                                        paciente.getDia3().getDesayuno().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia3().getDesayuno().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case 2:
                                         ingreseAlimento();
-                                        paciente.getDia3().getAlmuerzo().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia3().getAlmuerzo().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case 3:
                                         ingreseAlimento();
-                                        paciente.getDia3().getComida().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia3().getComida().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case 4:
                                         ingreseAlimento();
-                                        paciente.getDia3().getMerienda().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia3().getMerienda().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case 5:
                                         ingreseAlimento();
-                                        paciente.getDia3().getCena().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia3().getCena().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case -1:
                                         break;
@@ -172,23 +174,23 @@ public class Main {
                                 switch (eleccion) {
                                     case 1:
                                         ingreseAlimento();
-                                        paciente.getDia4().getDesayuno().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia4().getDesayuno().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case 2:
                                         ingreseAlimento();
-                                        paciente.getDia4().getAlmuerzo().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia4().getAlmuerzo().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case 3:
                                         ingreseAlimento();
-                                        paciente.getDia4().getComida().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia4().getComida().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case 4:
                                         ingreseAlimento();
-                                        paciente.getDia4().getMerienda().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia4().getMerienda().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case 5:
                                         ingreseAlimento();
-                                        paciente.getDia4().getCena().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia4().getCena().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case -1:
                                         break;
@@ -206,23 +208,23 @@ public class Main {
                                 switch (eleccion) {
                                     case 1:
                                         ingreseAlimento();
-                                        paciente.getDia5().getDesayuno().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia5().getDesayuno().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case 2:
                                         ingreseAlimento();
-                                        paciente.getDia5().getAlmuerzo().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia5().getAlmuerzo().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case 3:
                                         ingreseAlimento();
-                                        paciente.getDia5().getComida().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia5().getComida().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case 4:
                                         ingreseAlimento();
-                                        paciente.getDia5().getMerienda().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia5().getMerienda().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case 5:
                                         ingreseAlimento();
-                                        paciente.getDia5().getCena().addAlimento(new Alimento(getAlimento(), 0));
+                                        paciente.getDia5().getCena().addAlimento(new Alimento(getAlimento()));
                                         break;
                                     case -1:
                                         break;
@@ -242,9 +244,21 @@ public class Main {
                     encuesta.mostrarArbol(paciente);
                     System.out.println();
                     break;
+
                 case 3:
+                    encuesta.recibirResultados(paciente);
+                    System.out.println();
+                    break;
+
+                case 4:
+                    encuesta.rellenarEncuesta(paciente);
+                    System.out.println();
+                    break;
+
+                case 5:
                     exit = true;
                     break;
+
                 default:
                     opcionInvalida();
                     System.out.println();

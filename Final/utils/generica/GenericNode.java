@@ -1,4 +1,5 @@
 package utils.generica;
+
 public class GenericNode<T> {
 
     private T value;

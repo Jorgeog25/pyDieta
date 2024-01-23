@@ -43,4 +43,34 @@ public class Paciente {
     public Dia getDia5() {
         return dia5;
     }
+
+    public double getCalorias() {
+        double caloriasTotal = this.dia1.getCalorias() + this.dia2.getCalorias() + this.dia3.getCalorias() + this.dia4.getCalorias() + this.dia5.getCalorias();
+        return caloriasTotal;
+    }
+
+    public double getProteinas() {
+        double proteinasTotal = this.dia1.getProteinas() + this.dia2.getProteinas() + this.dia3.getProteinas() + this.dia4.getProteinas() + this.dia5.getProteinas();
+        return proteinasTotal;
+    }
+
+    public double getGrasas() {
+        double grasasTotal = this.dia1.getGrasas() + this.dia2.getGrasas() + this.dia3.getGrasas() + this.dia4.getGrasas() + this.dia5.getGrasas();
+        return grasasTotal;
+    }
+
+    public double getCarbohidratos() {
+        double carbohidratosTotal = this.dia1.getCarbohidratos() + this.dia2.getCarbohidratos() + this.dia3.getCarbohidratos() + this.dia4.getCarbohidratos() + this.dia5.getCarbohidratos();
+        return carbohidratosTotal;
+    }
+
+    public double getVitaminas() {
+        double vitaminasTotal = this.dia1.getVitaminas() + this.dia2.getVitaminas() + this.dia3.getVitaminas() + this.dia4.getVitaminas() + this.dia5.getVitaminas();
+        return vitaminasTotal;
+    }
+
+    public double getMinerales() {
+        double mineralesTotal = this.dia1.getMinerales() + this.dia2.getMinerales() + this.dia3.getMinerales() + this.dia4.getMinerales() + this.dia5.getMinerales();
+        return mineralesTotal;
+    }
 }

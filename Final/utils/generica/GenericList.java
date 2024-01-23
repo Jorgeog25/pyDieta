@@ -70,4 +70,21 @@ public class GenericList<T> {
             iterator = iterator.getNext();
         }
     }
+
+    public void delete(T value) {
+        if (this.first != null) {
+            if (this.first.getValue().equals(value)) {
+                this.first = this.first.getNext();
+            } else {
+                GenericNode<T> iterator = this.first;
+                while (iterator.getNext() != null) {
+                    if (iterator.getNext().getValue().equals(value)) {
+                        iterator.setNext(iterator.getNext().getNext());
+                        break;
+                    }
+                    iterator = iterator.getNext();
+                }
+            }
+        }
+    }
 }
