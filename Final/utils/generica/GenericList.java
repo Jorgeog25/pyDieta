@@ -1,7 +1,5 @@
 package utils.generica;
 
-import generica.GenericNode;
-
 public class GenericList<T> {
 
     private GenericNode<T> first = null;
@@ -64,19 +62,29 @@ public class GenericList<T> {
         return iterator;
     }
 
-    public T[] listAll() {
-        T[] list = (T[]) new Object[this.size()];
+    public void printAll() {
         GenericNode<T> iterator = this.first;
 
-        if (iterator == null)
-            return list;
-
-        int count = 0;
         while (iterator != null) {
-            list[count] = iterator.getValue();
-            count++;
+            System.out.println(iterator.getValue());
             iterator = iterator.getNext();
         }
-        return list;
+    }
+
+    public void delete(T value) {
+        if (this.first != null) {
+            if (this.first.getValue().equals(value)) {
+                this.first = this.first.getNext();
+            } else {
+                GenericNode<T> iterator = this.first;
+                while (iterator.getNext() != null) {
+                    if (iterator.getNext().getValue().equals(value)) {
+                        iterator.setNext(iterator.getNext().getNext());
+                        break;
+                    }
+                    iterator = iterator.getNext();
+                }
+            }
+        }
     }
 }
