@@ -14,6 +14,7 @@ public class Main {
         Paciente paciente = new Paciente(nombre ,"02/02/2024", 1.80, 80);
         Encuesta encuesta = new Encuesta("02/02/2024");
         boolean exit = false;
+        System.out.println();
 
         options(paciente, encuesta, exit);
 
@@ -48,6 +49,9 @@ public class Main {
         System.out.println("6. Solo alimentos Altos en azúcar");
         System.out.println("7. Salir");
     }
+    static void printDia(){
+        System.out.println("Seleccione dia: 1 / 2 / 3 / 4 / 5");
+    }
 
     static void printIngesta(){
         System.out.println("Seleccione ingesta: 1 (Desayuno) / 2 (Almuerzo) / 3 (Comida) / 4 (Merienda) / 5 (Cena) / -1 (Menu)");
@@ -65,7 +69,7 @@ public class Main {
             int eleccion;
             switch (getInt()) {
                 case 1:
-                    System.out.println("Selecciona el dia: ");
+                    printDia();
                     switch (getInt()) {
                         case 1:
                             do {
