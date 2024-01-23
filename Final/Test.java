@@ -8,14 +8,14 @@ public class Test {
         Paciente paciente = new Paciente("Juan", "2/7/2010",90,1.80);
         Encuesta encuesta = new Encuesta("Encuesta 1");
 
-        paciente.getDia1().getAlmuerzo().addAlimento(new Alimento("Arroz", 100));
-        paciente.getDia1().getCena().addAlimento(new Alimento("Fideos", 100));
+        paciente.getDia1().getAlmuerzo().addAlimento(new Alimento("Arroz"));
+        paciente.getDia1().getCena().addAlimento(new Alimento("Fideos"));
 
         System.out.println("Añadido");
         encuesta.mostrarArbol(paciente);
 
-        paciente.getDia2().getDesayuno().addAlimento(new Alimento("Leche", 100));
-        paciente.getDia2().getDesayuno().addAlimento(new Alimento("Cafe", 100));
+        paciente.getDia2().getDesayuno().addAlimento(new Alimento("Leche"));
+        paciente.getDia2().getDesayuno().addAlimento(new Alimento("Cafe"));
 
         System.out.println("Añadido");
         encuesta.mostrarArbol(paciente);
